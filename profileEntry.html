@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="pfestyle.css">
+</head>
+<body>
+
+    <div class="header">
+        <img class="logo" src="main-logo.svg" alt="..">
+        <div class="side">
+            <p>
+             <b>Bindhu K B</b>  <br> Hello Welcome
+            </p>
+        </div>
+    </div>
+        
+    
+    <div class="profile">
+        <label class="prf"><b>PROFILE INFO</b></label><br>
+        <label class="det">Fill your details below</label>
+    </div>
+
+
+
+    <div class="body-form">
+        
+        <form id="myform1">
+
+            <div class="input-box">
+                <div class="input-field">
+                    <label class"label">First Name</label><br>
+                    <input id="fname" type="text" required>
+                </div>
+                <div class="input-field">
+                    <label class"label">Middle Name</label><br>
+                    <input id="mname" type="text" required>
+                </div>
+                <div class="input-field">
+                    <label class"label">Last Name</label><br>
+                    <input id="lname" type="text" required>
+                </div>
+                <div class="input-field">
+                    <label class"label">Date of Birth</label><br>
+                    <input id="dob" type="date" required>
+                </div>
+            </div>
+
+            <div class="input-box">
+
+                <div class="input-field">
+                    <label >Email</label><br>
+                    <input id="email"  type="email" required>
+                </div>
+
+                <div class="input-field">
+                    <label >Phone</label><br>
+                    <input id="phone" type="number" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Gender</label><br>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label>Blood Group</label><br>
+                    <select id="bloodgroup" name="bloodgroup">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+            </div>
+
+            <label>Comments</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="155"></textarea>
+
+            <div class="btn">
+                <button class="cancel" >Cancel</button>
+                <button class="submit" onclick="submitForm()" >Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <footer>© 2004 -2024Sysfore Technologies Pvt. Ltd.  All Rights Reserved</footer>
+    </div>
+
+    <script src="app.js"></script>
+        
+    
+</body>
+
+</html>

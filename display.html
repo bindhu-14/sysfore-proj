@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="dispStyle.css">
+</head>
+<body>
+
+    <div class="header">
+        <img class="logo" src="main-logo.svg" alt="..">
+        <div class="side">
+            <p>
+             <b>Bindhu K B</b>  <br> Hello Welcome
+            </p>
+        </div>
+    </div>
+      
+    <div class="profile">
+        <label class="prf"><b>PROFILE INFO</b></label><br>
+        <label class="det">View profile details below</label>
+    </div>
+
+    <div class="body-table">
+
+        <table id="mytable">
+
+            <tr>
+                <td class="first-col">FIRST NAME</td>
+                <td id="fnamecell">-</td>
+            </tr>
+            <tr>
+                <td class="first-col">MIDDLE NAME</td>
+                <td id="mnamecell"></td>
+            </tr>
+            <tr>
+                <td class="first-col">LAST NAME</td>
+                <td id="lnamecell"></td>
+            </tr>
+            <tr>
+                <td class="first-col">DOB</td>
+                <td id="dob"></td>
+            </tr>
+            <tr>
+                <td class="first-col">EMAIL</td>
+                <td id="email"></td>
+            </tr>
+            <tr>
+                <td class="first-col">PHONE</td>
+                <td id="phone"></td>
+            </tr>
+            <tr>
+                <td class="first-col">GENDER</td>
+                <td id="gender"></td>
+            </tr>
+            <tr>
+                <td class="first-col">BLOOD GROUP</td>
+                <td id="bg"></td>
+            </tr>
+            <tr>
+                <td class="first-col">COMMENTS</td>
+                <td id="comm"></td>
+            </tr>
+
+        </table>
+        </div>
+        <div class="footer">
+            <footer>© 2004 -2024Sysfore Technologies Pvt. Ltd.  All Rights Reserved</footer>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+
+                var stored_data=localStorage.getItem('form_data');
+
+                var form_data=JSON.parse(stored_data);
+
+                var fnamecell = document.getElementById("fnamecell");
+                fnamecell.innerText = form_data.firstname;
+
+                var lnamecell = document.getElementById("lnamecell");
+                lnamecell.innerText = form_data.lastname;
+                
+                var mnamecell = document.getElementById("mnamecell");
+                mnamecell.innerText = form_data.middlename;
+
+                
+                var dob = document.getElementById("dob");
+                dob.innerText = form_data.date_of_birth;
+                console.log(dob);
+
+                
+                var email = document.getElementById("email");
+                email.innerText = form_data.email;
+
+                
+                var phone = document.getElementById("phone");
+                phone.innerText = form_data.phone;
+
+                var gender = document.getElementById("gender");
+                gender.innerText = form_data.gender;
+
+                var bg = document.getElementById("bg");
+                bg.innerText = form_data.bloodgroup;
+
+                var comm = document.getElementById("comm");
+                comm.innerText = form_data.comments;
+            });
+        </script>
+        
+    </body>
+    </html>
+
+
+    </div>

@@ -1,0 +1,1 @@
+This project contains three web pages, one is to login, the second page is to enter all the deatils and the third page displays all the details.

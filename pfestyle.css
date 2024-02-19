@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E8EBEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color:#2D3092 ;
+    padding: 15px; 
+}
+.logo{
+    height:30px;
+    width: 150px;
+}
+.side{
+    position: absolute;
+    left: 92%;
+    bottom: 91%;
+    color: white;
+    font-size: 13px;
+}
+
+.profile{
+    /* margin-left: 30px; */
+    padding: 20px;
+    padding-left: 30px;
+    background-color: white;
+}
+.profile .prf{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.profile .det{
+    color: rgb(174, 174, 174);
+    font-size: 16px;
+}
+label.prf b{
+    margin-bottom: 10px;
+}
+
+.body-form{
+    margin: 30px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.body-form .input-box{
+    display: flex;
+    /* display: grid; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: none;
+    
+}
+
+.input-box .input-field{
+    padding: 10px;
+}
+
+.input-box .input-field input{
+    padding: 15px 15px 15px 40px ;
+    border-color: 1px solid rgb(231, 231, 231); 
+}
+
+#gender{
+    /* padding: 10px; */
+    width: 223px;
+    height: 49px;
+}
+
+#bloodgroup{
+    /* padding: 10px; */
+    width: 223px;
+    height: 49px;
+}
+
+.btn{
+    cursor: pointer;
+    text-align: right;
+
+}
+.btn .cancel{
+    padding: 10px;
+    background-color: #E8EBEE ;
+    width: 90px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    }
+
+.btn .submit{
+    padding: 10px;
+    background-color:#fb5b0a ;
+    width: 90px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+
+
+.footer{
+    background-color: white;
+    text-align: center;
+    font-size: small;
+    color: rgb(126, 124, 124);;
+    /* top: 100%; */
+    bottom: 0;
+    padding: 15px;
+    width: 100vw;
+}
